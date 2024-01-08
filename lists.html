@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>list in css</title>
+</head>
+<style>
+    nav ul li{
+        /* border: 2px solid rgb(0, 0, 0); */
+        /* list-style: devanagari; */
+        list-style: none;
+        /* list-style-type: square; */
+        /* background-color: yellow; */
+        /* list-style-position: inside; */
+        padding: 20px;
+        /* list-style-image: url(https://www.google.com/imgres?imgurl=https%3A%2F%2Fcdn.pixabay.com%2Fphoto%2F2015%2F04%2F23%2F22%2F00%2Ftree-736885_1280.jpg&imgrefurl=https%3A%2F%2Fpixabay.com%2Fimages%2Fsearch%2Fnature%2F&docid=Ba_eiczVaD9-zM&tbnid=aVgXecnmQ_f1MM&vet=12ahUKEwiD5vCozaiDAxVPiFYBHb2ND9kQM3oECBYQAA..i&w=1280&h=797&ved=2ahUKEwiD5vCozaiDAxVPiFYBHb2ND9kQM3oECBYQAA); */
+    }
+    nav ul{
+        
+        display: flex;
+    }
+    .box{
+        border: 2px solid black;
+        width: 30vw;
+        height: 10vh;
+        overflow: auto;/*auto means if it require scroll bar, it can automatically apply it.*/
+        overflow-x: hidden;
+        overflow-y: auto;
+        /* white-space: nowrap; */
+        /* text-overflow: ellipsis; */
+    }
+</style>
+<body>
+    <nav>
+        <ul>
+            <li>home </li>
+            <li>about us </li>
+            <li>contact us </li>
+        </ul>
+    </nav>
+    <div class="box">
+        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptatum sequi beatae fuga harum quidem laudantium nisi architecto, dolorem porro necessitatibus. Adipisci magni, est at nobis voluptatibus minima eius sapiente illo, alias officia blanditiis accusantium, consectetur veritatis ipsam! Consequatur nam iusto error aperiam animi! Dolorum, nostrum! Laborum corrupti ab quae quo accusantium tenetur ipsam, nobis earum, eum quasi, aspernatur est iste?
+    </div>
+</body>
+</html>

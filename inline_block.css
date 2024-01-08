@@ -1,0 +1,13 @@
+p{
+    background-color: rgb(110, 91, 154);
+}
+a:visited{
+    color: cornflowerblue;
+    background-color: rgb(143, 174, 30);
+}
+a:active{
+    background-color: red;
+}
+a:hover{
+    background-color: yellow;
+}

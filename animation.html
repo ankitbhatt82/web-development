@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Animation in css</title>
+</head>
+<style>
+    .container{
+        height: 50vh;
+        width: 80vw;
+        background-color: aqua;
+    }
+    .box{
+        height: 50px;
+        width: 50px;
+        /* border-radius: 50%; */
+        background-color: blue;
+        /* animation-name: circleKiAnimation;
+        animation-duration: 1s;
+        animation-timing-function: ease-in-out;
+        animation-delay: 1s;
+        animation-iteration-count: 5;
+        animation-direction: reverse; */
+        /* animation-play-state: paused; */
+        animation: circleKiAnimation 3s ease-in-out 1s 5 alternate-reverse,
+                   circleKiAnimation2 3s ease-in-out 5 ;
+    }
+    @keyframes circleKiAnimation {
+        from{
+            background-color: blue;
+        }
+        to{
+            transform: translateX(200px) translateY(200px) ;
+            background-color: yellow;
+        }
+    }
+    @keyframes circleKiAnimation2 {
+        0%{
+            transform: rotate(45deg);
+        }
+        25%{
+            transform: rotate(60deg);
+        }
+        50%{
+            transform: rotate(30deg);            
+        }
+        75%{
+            transform: rotate(80deg);
+        }
+    }
+</style>
+<body>
+    <div class="container">
+        <div class="box"></div>
+    </div>
+</body>
+</html>

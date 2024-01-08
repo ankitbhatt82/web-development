@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Shadow and outline in css</title>
+</head>
+<style>
+    .box{
+        border: 2px solid blue;
+        padding: 30px;
+        box-shadow: 5px 15px 5px #7b0f7b;
+        /* box-shadow: h-offset v-offset blur spread color inset; */
+    }
+    .text-shadow{
+        font-size: 40px;
+        color: black;
+        text-shadow: 4px 4px 4px #0d1360;
+        margin: 50px;
+        /* text-shadow: h-offset v-offset blur color; */
+    }
+    .outline{
+        font-size: 40px;
+        padding: 10px;
+        margin: 30px;
+        border: 2px solid yellow;
+        outline: 2px solid black;
+        outline-offset: 3listd0px;
+        border-radius: 8px;
+    }
+</style>
+<body>
+    <div class="box">
+        we are here to see the shadow and outline.
+    </div>
+    <div class="text-shadow">
+        jagdish bhagat bolta h.
+    </div>
+    <div class="outline">
+        jaldi waha se hato.
+    </div>
+</body>
+</html>

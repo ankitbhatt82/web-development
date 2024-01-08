@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exercise2</title>
+    <style>
+        /* if we add multiple css to the same element then the last css will be applied to it. */
+        div h1{
+            color: rgb(214, 170, 170);
+        }
+        .red{
+            color: red;
+        }
+        .yellow{
+            color: yellow;
+        }
+        .blue{
+            color: blue;
+        }
+        .box{
+            border: 2px solid black;
+            width: 80vw;
+            height: 10vh;
+            margin: auto;
+            font-size: 16px;
+            background-color: yellow;
+        }
+        .container{
+            border: 2px solid black;
+            width: 80vw;
+            height: 50vh;
+            margin: auto;
+            font-size: 16px;
+            background-color: yellow;
+        }
+        .container p{
+            font-size: 2em;
+        } 
+    </style>
+</head>
+<body>
+    <div>
+        <p style="color: yellow; background-color: red;">Lorem ipsum dolor sit amet consectetur adipisicing elit. Earum quas distinctio nemo repudiandae veritatis qui saepe aspernatur rerum non optio.</p>
+        <p style="color: white; background-color: blue;">Lorem ipsum dolor sit amet consectetur adipisicing elit. Earum quas distinctio nemo repudiandae veritatis qui saepe aspernatur rerum non optio.</p>
+        <p style="color: white; background-color: blue;">Lorem ipsum dolor sit amet consectetur adipisicing elit. Earum quas distinctio nemo repudiandae veritatis qui saepe aspernatur rerum non optio.</p>
+        <p style="color: white; background-color: blue;">Lorem ipsum dolor sit amet consectetur adipisicing elit. Earum quas distinctio nemo repudiandae veritatis qui saepe aspernatur rerum non optio.</p>
+        <p style="color: white; background-color: blue;">Lorem ipsum dolor sit amet consectetur adipisicing elit. Earum quas distinctio nemo repudiandae veritatis qui saepe aspernatur rerum non optio.</p>
+        <p style="color: white; background-color: blue;">Lorem ipsum dolor sit amet consectetur adipisicing elit. Earum quas distinctio nemo repudiandae veritatis qui saepe aspernatur rerum non optio.</p>
+    </div>
+    <div>
+        <h1 class="red yellow blue">
+            Hey , this is CSS specificity.
+        </h1>
+    </div>
+    <div class="box">
+        this is vw.
+    </div>
+    <div class="container">
+        this is vh.
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Pariatur, reprehenderit.</p>
+    </div>
+</body>
+</html>

@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>exercise4</title>
+</head>
+<style>
+    *{
+        padding: 0;
+        margin: 0;
+    }
+    :root{
+        --color: rgb(229, 210, 176);
+        --pricolor: blue;
+        --seccolor: yellow;
+        --tercolor: pink;
+        --tetcolor: red;
+        --pentcolor: skyblue;
+    }
+    .nav{
+        background-color: var(--color);
+    }
+    ul{
+        display: flex;
+    }
+    li{
+        list-style: none;
+        padding: 20px;
+        width: 80px;
+        text-align: center;
+    }
+    ul li:first-child{
+        background-color: var(--pricolor);
+    }
+    
+    ul li:nth-child(2){
+        background-color: var(--seccolor);
+    }
+    
+    ul li:nth-child(3){
+        background-color: var(--tercolor);
+    }
+    
+    ul li:nth-child(4){
+        background-color: var(--tetcolor);
+    }
+    
+    ul li:nth-child(5){
+        background-color: var(--pentcolor);
+    }
+</style>
+<body>
+    <div class="nav">
+        <ul>
+            <li>home</li>
+            <li>images</li>
+            <li>videos</li>
+            <li>books</li>
+            <li>map</li>
+        </ul>
+    </div>
+</body>
+</html>

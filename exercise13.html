@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>exercise 13</title>
+    <style>
+        /* * {
+            padding: 0px;
+            margin: 0px;
+        } */
+
+       
+
+        .card {
+            height: 20vh;
+            width: 60vw;
+            border: 1px solid black;
+            background-color: white;
+            padding: 10px;
+            margin: 10px;
+            /* position: absolute; */
+            display: flex;
+            /* justify-content: center;
+            align-items: center; */
+        }
+
+        .card img {
+            position: relative;
+            /* display: flex;
+            justify-content: center;
+            align-items: center; */
+            height: 120px;
+            border-radius: 10px;
+            margin-left: 15px;
+        }
+
+        /* .card .durationtime{
+            position: relative;
+            height: 20px;
+            width: 50px;
+            background-color: rgb(219, 169, 169);
+            opacity: 0.5;
+            z-index: 10;
+        } */
+        .card .durationtime {
+            /* position: fixed; */
+            position: relative;
+            justify-content: center;
+            text-align: center;
+            left: 165px;
+            top: -30px;
+            /* top: 105px; */
+            height: 20px;
+            width: 50px;
+            background-color: black;
+            color: white;
+            border-radius: 5px;
+            opacity: 0.8;
+            z-index: 10;
+        }
+
+        .card .title1 {
+            position: relative;
+            /* display: flex; */
+            justify-content: flex-start;
+            font-size: x-small;
+            top: -5px;
+            /* align-items: center; */
+            margin: 10px;
+            color: rgb(7, 0, 0);
+            /* padding-top: 10px; */
+        }
+        .card .title1 .channel{
+            margin-top: 13px;
+            /* padding: 10px; */
+            color: rgb(4, 0, 0);
+            font-size: small;
+        }
+        .card .title1 .channel span{
+            margin: 5px;
+            margin-left: 0;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <div class="card">
+            <div>
+                <img src="https://i.ytimg.com/vi/9H-Ieq6zjIY/hqdefault.jpg?sqp=-oaymwEbCKgBEF5IVfKriqkDDggBFQAAiEIYAXABwAEG&rs=AOn4CLAq1g4Q6opar3DOZ0sbJrvgCZZB-A" alt="tdtfyf">
+                <div class="durationtime">
+                    12:34
+                </div>
+            </div>
+            
+            <div class="title1">
+                <h2>Introduction to javascript | Sigma web devlopment course | Tutorial #12</h2>
+                <div class="channel">
+                    <span>CodeWithHarry</span>
+                    <span>. 730k views</span>
+                    <span>. 5 months old</span>
+                </div>
+              
+            </div>
+        </div>
+    </div>
+    <script src="exercise13.js"></script>
+</body>
+
+</html>

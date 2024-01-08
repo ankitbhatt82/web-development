@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title></title>
+</head>
+<style>
+    .container{
+        border: 2px solid black;
+        display: grid;
+        margin: 50px;
+        /* grid-template-columns: 150px 100px;
+        grid-template-rows: 100px 100px 200px; */
+        grid-template-columns : 1fr 2fr 3fr;
+    }
+    .box{
+        border: 2px solid red;
+        height: 50px;
+        /* width: 50px; */
+    }
+    /* .box4{
+        grid-column: 1/2;
+        grid-row: 1/2;
+    }
+    .box1{
+        grid-column: 1/2;
+        grid-row: 1/2;
+    } */
+    
+</style>
+<body>
+    <div class="container">
+        <div class="box box1">1</div>
+        <div class="box">2</div>
+        <div class="box">3</div>
+        <div class="box box4">4</div>
+        <div class="box">5</div>
+    </div>
+</body>
+</html>

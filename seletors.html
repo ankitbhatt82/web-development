@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>more on css selectors</title>
+</head>
+<style>
+    .box{
+        border: 2px solid black;
+    }
+    .box:nth-child(even){
+        background-color: rgb(247, 247, 242);
+    }
+    .box:nth-last-child(1){
+        background-color: rgb(244, 242, 242);
+    }
+    .box:nth-child(odd){
+        background-color: rgb(245, 246, 241); 
+    }
+    .boxes::before{
+        content: "jagdish bhagat bolta h";
+        color: violet;
+    }
+    .boxes::after{
+        content: "jaldi waha se hato";
+        color: blue;
+    }
+    ::selection{
+        background-color: black;
+        color: blueviolet;
+    }
+    .box::first-letter{
+        color: rgb(137, 198, 13);
+        font-size: larger;
+    }
+    input::placeholder{
+        background-color: burlywood;
+    }
+    
+</style>
+<body>
+     <div class="boxes">
+        <div class="box">box Lorem ipsum, dolor sit amet consectetur adipisicing elit. Cupiditate, praesentium. Ab maxime molestiae alias rerum quas itaque veritatis illo adipisci tenetur repudiandae atque impedit blanditiis fugiat ipsam deleniti quidem, ut id quia debitis doloremque iure? Iste illo impedit libero quaerat. </div>
+        <div class="box">box Lorem ipsum, dolor sit amet consectetur adipisicing elit. Cupiditate, praesentium. Ab maxime molestiae alias rerum quas itaque veritatis illo adipisci tenetur repudiandae atque impedit blanditiis fugiat ipsam deleniti quidem, ut id quia debitis doloremque iure? Iste illo impedit libero quaerat. </div>
+        <div class="box">box Lorem ipsum, dolor sit amet consectetur adipisicing elit. Cupiditate, praesentium. Ab maxime molestiae alias rerum quas itaque veritatis illo adipisci tenetur repudiandae atque impedit blanditiis fugiat ipsam deleniti quidem, ut id quia debitis doloremque iure? Iste illo impedit libero quaerat. </div>
+        <div class="box">box Lorem ipsum, dolor sit amet consectetur adipisicing elit. Cupiditate, praesentium. Ab maxime molestiae alias rerum quas itaque veritatis illo adipisci tenetur repudiandae atque impedit blanditiis fugiat ipsam deleniti quidem, ut id quia debitis doloremque iure? Iste illo impedit libero quaerat. </div>
+        <input type="text" placeholder="search" >
+     </div>
+</body>
+</html>

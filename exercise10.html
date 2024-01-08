@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Business name generator</title>
+</head>
+<script>
+    let random1=Math.random();
+    let random2=Math.random();
+    let random3=Math.random();
+    let a, b, c;
+
+    if (random1<0.33) {
+        a="Crazy";
+    } else if(random1>=0.33 && random1<0.66){
+        a="Amazing";
+    } else{
+        a="Fire"
+    }
+    if (random2<0.33) {
+        b="engine";
+    } else if(random2>=0.33 && random2<0.66){
+        b="foods";
+    } else{
+        b="garments"
+    }
+    if (random3<0.33) {
+        c="bros.";
+    } else if(random3>=0.33 && random3<0.66){
+        c="limited";
+    } else{
+        c="hub"
+    }
+    console.log('your shop name is '+a+' '+b+' '+c);
+</script>
+<body>
+    
+</body>
+</html>

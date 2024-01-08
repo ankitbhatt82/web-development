@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Display property in css</title>
+</head>
+<style>
+    *{
+        margin: 0;
+        padding: 0;
+    }
+    
+    .box2{
+        border: 1px solid black;
+        padding: 20px;
+        margin: 20px;
+        display: inline;
+        /* the padding and margin will not be added to top if we use inline */
+      
+    }
+    .box3{
+        border: 1px solid black;
+        padding: 20px;
+        margin: 20px;
+        /* to apply margin and padding in div element at the top we have to use display: inline block */
+        display: inline-block;
+        display: flex;
+        justify-content: center;
+    }
+    .box4{
+        border: 1px solid black;
+        padding: 20px;
+        margin: 20px;
+        /* we use none , if we do not want to show the box */
+        /* display: none; */
+        /* we use hidden , if we do not want to show the box but want that space to show in our website */
+        visibility: hidden;
+    }
+    .box{
+        border: 2px solid black;
+        background-color: yellow;
+        display: inline;
+    }
+</style>
+<body>
+    <div class="box2">
+        par mene khatti tofee khayi thi.
+    </div>
+    <div class="box3">
+        par mene khatti tofee khayi h.
+    </div>
+    <div class="box4">
+        par m khatti tofee khaunga.
+    </div>
+    <!-- div is a block element -->
+    <div class="box">
+        hey, whatsuup.
+    </div>
+    <div class="box">i am good </div>
+    <!-- span is inline element -->
+    <span>his name is </span>
+    <span>puneet superstar</span>
+    
+</body>
+</html>

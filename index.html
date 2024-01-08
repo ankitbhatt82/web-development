@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="this is the page which contains some information about the course.">
+    <title>first website</title>
+    <link rel="stylesheet" href="style.css">
+    <!-- <script src="script.js"></script>  -->
+</head>
+<body>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ea dolores, ad corporis veritatis ut rerum deleniti consectetur aliquam cum magni ducimus illum, nostrum unde eveniet? Ducimus eaque neque quae iusto sequi quis in tempore vitae hic cumque aspernatur corrupti repudiandae, totam tenetur doloremque numquam, at facere debitis pariatur voluptatum. Nemo optio fuga possimus repudiandae voluptatibus hic fugiat illo dolorum reiciendis, nihil iure at molestiae maxime voluptatem ab nostrum eum doloribus itaque magnam saepe eaque! Ipsa amet veritatis incidunt ratione dolorem, quasi iste possimus, delectus minima blanditiis obcaecati harum magnam, nihil voluptatibus doloribus repellendus atque! Ex temporibus corporis facere! Ullam, nisi.</p>
+    <h1>this is heading- headings has 6 types</h1>
+    <h2>this is heading- headings has 6 types</h2>
+    <h3>this is heading- headings has 6 types</h3>
+    <h4>this is heading- headings has 6 types</h4>
+    <h5>this is heading- headings has 6 types</h5>
+    <h6>this is heading- headings has 6 types</h6>
+    <a target="_blank" href="http://www.google.com">Open google</a>
+    <a target="_blank" href="http://www.quora.com">Open quora</a>
+    <a target="_blank" href="http://www.youtube.com">Open youtube</a>
+    <a target="_blank" href="http://www.facebook.com">Open facebook</a>
+    <br>
+    <hr>
+    <img height="400"  src="train.png" alt="this is img">
+    <table>
+        <caption>Student data</caption>
+        <tr>
+            <th>Name</th>
+            <th>Roll no.</th>
+            <th>gender</th>
+        </tr>
+        <tr>
+            <td>ankit</td>
+            <td>21bca059</td>
+            <td rowspan="2">Male</td>
+        </tr>
+        <tr>
+            <td>ankit</td>
+            <td>21bca059</td>
+        </tr>
+        <tr>
+            <td colspan="2">ankit</td>
+            <td>Male</td>
+        </tr>
+    </table>
+    <hr>
+    <p>unordered list of groceries item</p>
+    <ul type="square">
+        <li>atta</li>
+        <li>rice</li>
+        <li>sugar</li>
+        <li>biscuit</li>
+    </ul>
+    <hr>
+    <p>ordered list of groceries item</p>
+    <ol type="a">
+        <li>atta</li>
+        <li>rice</li>
+        <li>sugar</li>
+        <li>biscuit</li>
+    </ol>
+    <hr>
+    <form action="post">
+        <h1>fill this form</h1>
+        <div>
+        <label for="firstname">Your first name</label>
+        <input type="text" placeholder="first name" id="firstname">
+        </div>
+        <div>
+            <label for="gender">Your gender</label>
+            <input type="radio" id="male" name="gender">
+            <label for="male">Male</label>
+            <input type="radio" id="female" name="gender">
+            <label for="female">Female</label>
+        </div>
+        <div>
+            <label for="mobile">Mobile no.</label>
+            <input type="number" name="mob" id="mob" required>
+        </div>
+        <div>
+            <label for="subject">select subject</label>
+            <input type="checkbox" id="subject" name="subject">
+            <label for="subject">math</label>
+            <input type="checkbox" id="subject" name="subject">
+            <label for="subject">science</label>
+            <input type="checkbox" id="subject" name="subject">
+            <label for="subject">hindi</label>
+            <input type="checkbox" id="subject" name="subject">
+            <label for="subject">english</label>
+            <input type="checkbox" id="subject" name="subject">
+            <label for="subject">s.s.t</label>
+        </div>
+        <div>
+            <label for="comment">Enter your comment</label>
+            <br>
+            <textarea name="comment" id="comment" cols="50" rows="10" required></textarea>
+        </div>
+        <div>
+            <label for="course">Select the course</label>
+            <select name="course" id="course">
+                <option value="btech">Btech</option>
+                <option value="btech">BCA</option>
+                <option value="btech">Bcom</option>
+                <option value="btech">BBA</option>
+            </select>
+        </div>
+    </form>
+</body>
+</html>
